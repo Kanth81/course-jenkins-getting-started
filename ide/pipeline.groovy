@@ -6,7 +6,7 @@ pipeline {
             steps {
                 
                 git url: 'https://github.com/Kanth81/jgsu-spring-petclinic.git', branch: 'main'
-                sh './mvnw package'
+                sh './mvnw clean compile'
               
             }
 
