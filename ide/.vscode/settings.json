@@ -10,8 +10,7 @@
     "local": {
       "url": "http://jenkins:7080",
       "user": "admin",
-      "password": "admin",
-      "useCrumbIssuer": true
+      "password": "admin"
     }
   }
 }
