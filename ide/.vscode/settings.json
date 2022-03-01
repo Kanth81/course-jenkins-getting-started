@@ -1,13 +1,13 @@
 {
   "jenkins-runner.jobs": {
     "ide": {
-      "runWith": "pipelines-7080",
+      "runWith": "local",
       "name": "ide",
       "isDefault": true
     }
   },
   "jenkins-runner.hostConfigs": {
-    "pipelines-7080": {
+    "local": {
       "url": "http://jenkins:7080",
       "user": "admin",
       "password": "admin",
