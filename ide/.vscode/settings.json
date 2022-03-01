@@ -1,24 +1,17 @@
-"jenkins-runner.hostConfigs": {
-  "master": {
+{
+  "jenkins-runner.jobs": {
+    "ide": {
+      "runWith": "pipelines-7080",
+      "name": "ide",
+      "isDefault": true
+    }
+  },
+  "jenkins-runner.hostConfigs": {
+    "pipelines-7080": {
       "url": "http://jenkins:7080",
       "user": "admin",
-      "password": "admin"
+      "password": "admin",
+      "useCrumbIssuer": true
+    }
   }
 }
-
-/* Add jobs and thir parameters */
-
-"jenkins-runner.jobs": {
-    "ide": {
-        "isDefault": true,
-        "runWith": ["master"],
-        "name": "ide",
-    }
-
-  }
-
-
-
-
-
-
