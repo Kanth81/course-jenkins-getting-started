@@ -1,16 +1,24 @@
-{
-  "jenkins-runner.jobs": {
-    "ide": {
-      "runWith": "local",
-      "name": "ide",
-      "isDefault": true
-    }
-  },
-  "jenkins-runner.hostConfigs": {
-    "local": {
+"jenkins-runner.hostConfigs": {
+  "master": {
       "url": "http://jenkins:7080",
       "user": "admin",
       "password": "admin"
-    }
   }
 }
+
+/* Add jobs and thir parameters */
+
+"jenkins-runner.jobs": {
+    "ide": {
+        "isDefault": true,
+        "runWith": ["master"],
+        "name": "ide",
+    }
+
+  }
+
+
+
+
+
+
